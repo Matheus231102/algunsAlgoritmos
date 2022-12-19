@@ -49,7 +49,8 @@ function somarArray (arrayNumerosNaoSelecionados) {
         soma = soma + arrayNumerosNaoSelecionados[index]
     } return soma
 }
-// let numeroTeste = 4003600000000014
+
+let numeroTeste = 4003600000000014
 
 function validationLuhn (numeroteste) {
     let numerosSel = numerosSelecionados(transformarEmArray(numeroteste))
@@ -62,9 +63,4 @@ function validationLuhn (numeroteste) {
     } else return false
 }
 
-/*
-id="numberid"
-id="buttonid"
-id="campoid"
-*/
-
+console.log(validationLuhn(numeroTeste))
